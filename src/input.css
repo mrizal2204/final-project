@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.styled-select select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+
+.custom-label {
+  @apply flex gap-4;
+}
+
+.custom-label:after {
+  content: "Change";
+  pointer-events: auto;
+}
