@@ -1,0 +1,142 @@
+
+.header { grid-area: header; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+
+h6 { margin: 0px;}
+h5 { margin: 0px;}
+
+.grid-container {
+display: grid;
+grid-template-areas:
+    'header header header header header header header header'
+    'main main main main main main right right'
+    '. . . . . . right right'
+    'footer footer footer footer footer footer footer footer';
+grid-template-rows: 80px 800px 80px;
+gap: 10px;
+/* background-color: #cdcccc; */
+padding: 10px;
+}
+
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+font-size: 30px;
+}
+
+.main {
+    display: flex;
+    padding-left: 10%;
+}
+
+.main-item1 {
+    display: grid;
+    width: 10%;
+    height: 100px;
+    /* border: 1px solid black; */
+    padding: 1% 2%;
+    gap: 5%;
+}
+.main-item1 > div {
+    border-radius: 5px 5px 5px 5px;
+}
+.main-item1 > div:hover {
+    background-color: rgb(176, 175, 175);
+}
+
+
+.main-item2  {
+    width: 90%;
+    height: 683px;
+}
+.main-item2 > div {
+    width: 100%;
+    margin-top: 1%;
+    /* border: 1px solid black; */
+    background-image: url("product-image/air-max-position1.png");
+    background-color: rgb(232, 231, 231);
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.item-product {
+    /* border: 1px solid black; */
+    height: 50px;
+    background-color: rgb(232, 231, 231);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right {
+    padding: 0% 15%;
+    font-family: Helvetica
+}
+
+.right-item {
+    display: flex;
+}
+
+.right-item :hover {
+    background-color: rgb(176, 175, 175);
+}
+
+.right-item2 {
+    padding: 1% 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: medium;
+}
+
+.right-item3-size1 {grid-area: right-item3-size1;}
+.right-item3-size2 {grid-area: right-item3-size2;}
+.right-item3-size3 {grid-area: right-item3-size3;}
+.right-item3-size4 {grid-area: right-item3-size4;}
+.right-item3-size5 {grid-area: right-item3-size5;}
+.right-item3-size6 {grid-area: right-item3-size6;}
+.right-item3-size7 {grid-area: right-item3-size7;}
+.right-item3-size8 {grid-area: right-item3-size8;}
+.right-item3-size9 {grid-area: right-item3-size9;}
+.right-item3-size10 {grid-area: right-item3-size10;}
+.right-item3-size11 {grid-area: right-item3-size11;}
+.right-item3-size12 {grid-area: right-item3-size12;}
+.right-item3-size13 {grid-area: right-item3-size13;}
+.right-item3 {
+    display: grid;
+    grid-template-areas:
+    'right-item3-size1 right-item3-size2 right-item3-size3'
+    'right-item3-size4 right-item3-size5 right-item3-size6'
+    'right-item3-size7 right-item3-size8 right-item3-size9'
+    'right-item3-size10 right-item3-size11 right-item3-size12'
+    'right-item3-size13 . .';
+    gap: 10px;
+}
+
+.right-item3 > div{
+    border: 1px solid rgb(232, 231, 231);
+    line-height: 50px;
+    font-size: medium;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.right-item3 > div:hover {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.right-item-warna {
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 70px;
+    margin: 1px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(232, 231, 231);
+    border-radius: 5px 5px 5px 5px;
+}
