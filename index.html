@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .accordion__head {
+        cursor: pointer;
+      }
+      .accordion__body {
+        transition: all 0.3s;
+      }
+      .accordion__body--is-closed {
+        margin: 0;
+        border-width: 0;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+      }
+      .accordion:has(.accordion__body--is-lock-open) .accordion__head {
+        cursor: default;
+      }
+      .accordion__body--is-lock-open {
+        height: auto !important;
+        overflow: auto !important;
+        cursor: default !important;
+      }
+      .group\/product-category-list:hover .product-item {
+        /* Reset tailwind trucate and text-ellipsis class properties */
+        text-overflow: initial;
+        overflow: default;
+        white-space: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1 -->
+    <section class="mx-6 mt-20 md:mx-12" style="font-family: Helvetica, sans-serif;">
+      <a href="#">
+        <picture>
+          <source 
+            srcset="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1167,c_limit/21254ece-bbb3-457a-bcdc-3af7b7a73093/nike-just-do-it.png" 
+            media="(min-width: 600px)">
+          <img 
+            class="w-full h-full object-fit"
+            src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/6d98b914-1097-44ab-8171-f5cf2396acac/nike-just-do-it.png"
+            alt="Lunar new year poster"
+          >
+        </picture>
+        <div class="mt-6 lg:mx-auto sm:w-11/12 lg:w-9/12 lg:text-center">
+          <p class="mb-2 font-bold text-5xl uppercase lg:text-7xl">STEP INTO THE LUNAR NEW YEAR</p>
+          <p class="mt-6 font-normal text-base lg:text-xl">Get into the festive spirit in all day looks that take you where you want to be. Shop our Lunar New Year collection.</p>
+          <div class="mt-6">
+            <button class="rounded-full py-1.5 px-5 bg-black hover:bg-gray-500 font-bold text-base text-white">Shop</button>
+          </div>
+        </div>
+      </a>
+    </section>
+    <section class="mx-6 mt-20 md:mx-12" style="font-family: Helvetica, sans-serif;">
+        <a href="#">
+          <video class="w-full" playsinline autoplay muted loop preload="auto">
+            <source 
+              src="https://assets.mixkit.co/videos/preview/mixkit-basketball-player-dribbling-ball-744-large.mp4" 
+              media="(min-width: 600px)">
+            <source
+              src="https://assets.mixkit.co/videos/preview/mixkit-basketball-player-dribbling-then-dunking-2285-large.mp4"
+            >
+          </video>
+          <div class="mt-6 lg:mx-auto sm:w-11/12 lg:w-9/12 lg:text-center">
+            <p class="mb-2 font-bold text-5xl uppercase lg:text-7xl">NIKE G.T CUT 3</p>
+            <p class="mt-6 font-normal text-base lg:text-xl">Built for players who are constantly cutting, stopping on a dime and changing the game.</p>
+            <div class="mt-6">
+              <button class="rounded-full py-1.5 px-5 bg-black hover:bg-gray-500 font-bold text-base text-white">Explore</button>
+            </div>
+          </div>
+        </a>
+    </section>
+    <section class="mx-6 mt-20 md:mx-12" style="font-family: Helvetica, sans-serif;">
+        <h1 class="mb-6 font-bold text-2xl">Don't miss</h1>
+        <a href="#">
+          <video class="w-full" playsinline autoplay muted loop preload="auto">
+            <source 
+              src="https://assets.mixkit.co/videos/preview/mixkit-basketball-player-dribbling-ball-744-large.mp4" 
+              media="(min-width: 600px)">
+            <source
+              src="https://assets.mixkit.co/videos/preview/mixkit-basketball-player-dribbling-then-dunking-2285-large.mp4"
+            >
+          </video>
+          <div class="mt-6 lg:mx-auto sm:w-11/12 lg:w-9/12 lg:text-center">
+            <p class="font-semibold text-base lg:text-xl">Nike Dynamo 2 EasyOn</p>
+            <p class="mb-2 font-bold text-5xl uppercase lg:text-7xl">NIKE EASYON AND GO</p>
+            <p class="mt-6 font-normal text-base lg:text-xl">Nike EasyOn--Designed to put on and get going</p>
+            <div class="mt-6">
+              <button class="rounded-full py-1.5 px-5 bg-black hover:bg-gray-500 font-bold text-base text-white">Shop</button>
+            </div>
+          </div>
+        </a>
+    </section>
+    <!-- 2 -->
+    <section class="mx-6 mt-20 md:mx-12" style="font-family: Helvetica, sans-serif;">
+      <h1 class="mb-6 font-bold text-2xl">Don't Miss</h1>
+      <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <section class="h-[500px] relative md:h-[700px]">
+          <a href="#">
+            <picture>
+              <source 
+                srcset="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_714,c_limit/85a704a9-239c-47f6-b86a-361f25ff82cc/nike-just-do-it.jpg" 
+                media="(min-width:768px)">
+              <img 
+                class="w-full h-full md:object-cover"
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_500,c_limit/85a704a9-239c-47f6-b86a-361f25ff82cc/nike-just-do-it.jpg"
+                alt="New Phantom GX"
+              >
+            </picture>
+            <div class="absolute inset-x-6 bottom-6 text-white">
+              <p class="font-bold">Early Member Access</p>
+              <p class="font-bold text-xl">New Phantom GX</p>
+              <div class="mt-6">
+                <button class="rounded-full py-1.5 px-5 bg-white hover:bg-gray-400 font-bold text-base text-black">Shop</button>
+              </div>
+            </div>
+          </a>
+        </section>
+        <section class="h-[500px] relative md:h-[700px]">
+          <a href="#">
+            <picture>
+              <source
+                srcset="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_712,c_limit/90fd6e48-3c9d-4568-bc54-10b6fe1220d8/nike-just-do-it.png"
+                media="(min-width:768px)"
+              >
+              <img 
+                class="w-full h-full md:object-cover"
+                src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_500,c_limit/137b4cea-c665-4681-bdc2-b41078512a3b/nike-just-do-it.png"
+                alt="Retro Running Shoes"
+              >
+            </picture>
+            <div class="absolute inset-x-6 bottom-6 text-white">
+              <p class="font-bold text-xl">Retro Running Shoes</p>
+              <div class="mt-6">
+                <button class="rounded-full py-1.5 px-5 bg-white hover:bg-gray-400 font-bold text-base text-black">Shop</button>
+              </div>
+            </div>
+          </a>
+        </section>
+      </div>
+   </section>
+    <!-- 3 -->
+    <section class="group/product-category-list mx-6 mt-20 md:mx-12" style="font-family: Helvetica, sans-serif;">
+      <div class="mx-auto max-w-4xl grid grid-cols-1 gap-y-4 gap-x-12 sm:grid-cols-4 ">
+        <section class="accordion" data-accordion-group="product-category-list">
+          <h1 class="accordion__head font-bold text-gray-700">Icons</h1>
+          <div class="accordion__body accordion__body--is-closed">
+            <ul class="flex flex-col gap-4 ml-6 font-semibold text-gray-500 sm:ml-0">
+              <li class="product-item mt-4 hover:text-black truncate text-ellipsis"><a href="#">Air Force 1</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Huarache</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Air Max 90</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Air Max 95</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Air Max 97</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Air Max 270</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Air Max 720</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">All Air Max</a></li>
+              <li class="product-item mb-4 hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Vapormax</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="accordion" data-accordion-group="product-category-list">
+          <h1 class="accordion__head font-bold text-gray-700">Shoes</h1>
+          <div class="accordion__body accordion__body--is-closed ">
+            <ul class="flex flex-col gap-4 ml-6 font-semibold text-gray-500 sm:ml-0">
+              <li class="product-item mt-4 hover:text-black truncate text-ellipsis"><a href="#">All Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Custom Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Jordan Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Running Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Basketball Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Football Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Gym & Training Shoes</a></li>
+              <li class="product-item mb-4 hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Lifestyle Shoes</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="accordion" data-accordion-group="product-category-list">
+          <h1 class="accordion__head font-bold text-gray-700">Clothing</h1>
+          <div class="accordion__body accordion__body--is-closed">
+            <ul class="flex flex-col gap-4 ml-6 font-semibold text-gray-500 sm:ml-0">
+              <li class="product-item mt-4 hover:text-black truncate text-ellipsis"><a href="#">All Clothing</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Modest Wear</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Hooedies and Pullovers</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Shirts & Tops</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Jackets</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Compression & Nike Pro</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Trousers & Leggings</a></li>
+              <li class="product-item mb-4 hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Shorts</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="accordion" data-accordion-group="product-category-list">
+          <h1 class="accordion__head font-bold text-gray-700">Kids'</h1>
+          <div class="accordion__body accordion__body--is-closed">
+            <ul class="flex flex-col gap-4 ml-6 font-semibold text-gray-500 sm:ml-0">
+              <li class="product-item mt-4 hover:text-black truncate text-ellipsis"><a href="#">Infant & Toddler Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Kids' Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Kids' Jordan Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis"><a href="#">Kids' Basketball Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Kids' Running Shoes</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Kids' Clothing</a></li>
+              <li class="product-item hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Kids' Backpacks</a></li>
+              <li class="product-item mb-4 hover:text-black truncate text-ellipsis sm:hidden group-hover/product-category-list:block"><a href="#">Kids' Socks</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script>
+      const productCategoryListEl = document.querySelector('.group\\/product-category-list');
+      const toggleLockOpenAccordionBodyEl = (state, el) => {
+        if (state) {
+          el.classList.add('accordion__body--is-lock-open');
+          el.classList.remove('accordion__body--is-closed');
+        } else {
+          el.classList.remove('accordion__body--is-lock-open');
+          el.classList.add('accordion__body--is-closed');
+        }
+      };
+      const toggleLockOpenProductCategoryListAccordionEls = (state) => {
+        const productCategoryListEl = document.querySelector('.group\\/product-category-list');
+        const productCategoryListAccordionEls = Array.from(productCategoryListEl.querySelectorAll('.accordion[data-accordion-group="product-category-list"]'));
+
+        productCategoryListAccordionEls.forEach(accordionEl => {
+          const accordionBodyEl = accordionEl.querySelector('.accordion__body');
+          toggleLockOpenAccordionBodyEl(state, accordionBodyEl);
+        });
+      };
+      const toggleAccordion = (el) => {
+        const accordionBodyEl = el.querySelector('.accordion__body');
+
+        if (accordionBodyEl.classList.contains('accordion__body--is-lock-open')) return;
+
+        // ACTION
+        if (accordionBodyEl.classList.contains('accordion__body--is-closed')) {
+          accordionBodyEl.style.height = `${accordionBodyEl.scrollHeight}px`;
+          accordionBodyEl.classList.remove('accordion__body--is-closed');
+        } else {
+          accordionBodyEl.style.height = 0;
+          accordionBodyEl.classList.add('accordion__body--is-closed');
+        }
+        
+        // CLOSE OTHER ACCORDIONS
+        if(el.hasAttribute('data-accordion-group')) {
+          if (!accordionBodyEl.classList.contains('accordion__body--is-closed')) {
+            const accordionGroupName = el.getAttribute('data-accordion-group');
+            const otherAccordionEls = Array.from(
+              document.querySelectorAll(`[data-accordion-group=${accordionGroupName}]`)
+            ).filter(itemEl => itemEl !== el);
+            
+            otherAccordionEls.forEach(itemEl => {
+              const accordionBodyEl = itemEl.querySelector('.accordion__body');
+              accordionBodyEl.style.height = 0;
+              accordionBodyEl.classList.add('accordion__body--is-closed');
+            });
+          }
+        }
+      };
+      window.addEventListener('click', (e) => {
+        // Accordion actions
+        if (e.target.classList.contains('accordion__head')) {
+            const accordionEl = e.target.parentElement;
+            toggleAccordion(accordionEl);
+        }
+      });
+      window.addEventListener('load', (e) => {
+        const smBreakpoint = 640;
+
+        // Product category section action
+        if(window.innerWidth > smBreakpoint) {
+          toggleLockOpenProductCategoryListAccordionEls(true);
+        }
+      });    
+      window.addEventListener('resize', (e) => {
+        const smBreakpoint = 640;
+        
+        // Product category section action
+        if(window.innerWidth <= smBreakpoint) {
+          toggleLockOpenProductCategoryListAccordionEls(false);
+        }
+
+        if(window.innerWidth > smBreakpoint) {
+          toggleLockOpenProductCategoryListAccordionEls(true);
+        }
+      });
+    </script>
+  </body>
+</html>
